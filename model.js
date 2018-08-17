@@ -1,16 +1,15 @@
-var networkWeight = 20000000
+var networkWeightStart = networkWeight = 20000000
 
-var balance1 = 1000000
-var balance2 = 100000
-var balance3 = 10000
-var balance4 = 1000
+var balance1Start = balance1 = 1000000
+var balance2Start = balance2 = 100000
+var balance3Start = balance3 = 10000
+var balance4Start = balance4 = 1000
 
 const blockReward = 2
 
 const blocktime = 30 //seconds
 
 const blocksYear = 60 / blocktime * 60 * 24 * 365
-
 
 for (var i=0; i<blocksYear; i++) {
 
@@ -24,9 +23,9 @@ for (var i=0; i<blocksYear; i++) {
 }
 
 console.log('---------------------------')
-console.log('balance1', balance1)
-console.log('balance1', balance2)
-console.log('balance1', balance3)
-console.log('balance1', balance4)
-console.log('network weight', networkWeight)
+console.log('balance1        |', balance1 + '   |', Math.round((balance1/balance1Start-1)*10000)/100 + '%')
+console.log('balance2        |', balance2 + '    |', Math.round((balance2/balance2Start-1)*10000)/100 + '%')
+console.log('balance3        |', balance3 + '     |', Math.round((balance3/balance3Start-1)*10000)/100 + '%')
+console.log('balance4        |', balance4 + '      |', Math.round((balance4/balance4Start-1)*10000)/100 + '%')
+console.log('network weight  |', networkWeight + '  |', Math.round((networkWeight/networkWeightStart-1)*10000)/100 + '%')
 console.log('---------------------------')
