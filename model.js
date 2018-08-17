@@ -22,10 +22,12 @@ for (var i=0; i<blocksYear; i++) {
 
 }
 
-console.log('---------------------------')
-console.log('balance1        |', balance1 + '   |', Math.round((balance1/balance1Start-1)*10000)/100 + '%')
-console.log('balance2        |', balance2 + '    |', Math.round((balance2/balance2Start-1)*10000)/100 + '%')
-console.log('balance3        |', balance3 + '     |', Math.round((balance3/balance3Start-1)*10000)/100 + '%')
-console.log('balance4        |', balance4 + '      |', Math.round((balance4/balance4Start-1)*10000)/100 + '%')
-console.log('network weight  |', networkWeight + '  |', Math.round((networkWeight/networkWeightStart-1)*10000)/100 + '%')
-console.log('---------------------------')
+console.log('|--------------------------------------------------------------|')
+console.log('| Staker          |', 'Balance Start |', 'Balance End |', 'Percent Gain |')
+console.log('|--------------------------------------------------------------|')
+console.log('| balance1        |', balance1Start + '       |', balance1 + '     |', Math.round((balance1/balance1Start-1)*10000)/100 + '%       |')
+console.log('| balance2        |', balance2Start + '        |', balance2 + '      |', Math.round((balance2/balance2Start-1)*10000)/100 + '%       |')
+console.log('| balance3        |', balance3Start + '         |', balance3 + '       |', Math.round((balance3/balance3Start-1)*10000)/100 + '%       |')
+console.log('| balance4        |', balance4Start + '          |', balance4 + '        |', Math.round((balance4/balance4Start-1)*10000)/100 + '%        |')
+console.log('| network weight  |', networkWeightStart + '      |', networkWeight + '    |', Math.round((networkWeight/networkWeightStart-1)*10000)/100 + '%       |')
+console.log('|--------------------------------------------------------------|')
